@@ -15,7 +15,13 @@ Hai tham số cần cung cấp là số tiền cần đổi, tỉ giá $, kết 
 ##  Kết quả
   
 API chạy ở ```localhost:44314```
-WebApp chạy ở ```localhost: 44363```, Trang chuyển đổi tiền tệ: ```/Converter```
+Web App chạy ở ```localhost: 44363```, Trang chuyển đổi tiền tệ: ```/Converter```
+
+Gọi API từ Web App:
+<kbd>![!](https://raw.githubusercontent.com/mq149/CurrencyConverterAPI/master/Result%20Images/api-with-web-app.png "API from Web App")</kbd>
+
+Test API với Postman:
+<kbd>![!](https://raw.githubusercontent.com/mq149/CurrencyConverterAPI/master/Result%20Images/postman.png "API from Postman")</kbd>
 
 ###  CurrencyConverterAPI.Controller: ```ConverterController.cs```
 ```
