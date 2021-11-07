@@ -55,38 +55,25 @@ public class Converter
 	}
 }
 ```
-
-| Tên | Loại | Kiểu dữ liệu/trả về | Mô tả |
-
-|-------------------|----------------------|---------------------|--------------------------------------------------------------------|
-
-| ```amount``` | thuộc tính | float | Giá trị tiền (USD) cần quy đổi |
-
-| ```exchangeRate```| thuộc tính | float | Tỉ giá quy đổi |
-
-| ```result``` | thuộc tính | float | Kết quả quy đổi |
-
-| ```Converter``` | phương thức khởi tạo | | Khởi tạo amount và exchangeRate |
-
-| ```convert``` | phương thức | void | Quy đổi dựa trên amount và exchangeRate và lưu kết quả vào result. |
+| Tên          | Loại                 | Kiểu dữ liệu/trả về | Mô tả                                                              |
+|--------------|----------------------|---------------------|--------------------------------------------------------------------|
+| amount       | thuộc tính           | float               | Giá trị tiền (USD) cần quy đổi                                     |
+| exchangeRate | thuộc tính           | float               | Tỷ giá quy đổi                                                     |
+| result       | thuộc tính           | float               | Kết quả quy đổi                                                    |
+| Converter    | phương thức khởi tạo |                     | Khởi tạo amount và exchangeRate                                    |
+| convert      | phương thức          | void                | Quy đổi dựa trênn amount và exchangeRate và lưu kết quả vào result |
 
   
 
 ###  CurrencyConverter.Page: ```Pages/Converter.cshtml```
 
 Các thành phần chính trong view:
-
-| Loại | ID(#)/Class(.)/Type | Mô tả |
-
-|------------|------------------------------------------|-----------------------------------------------|
-
-|```input``` | ```[type=text]```  ```#amount``` | Nhập giá trị cần quy đổi |
-
-|```input``` | ```[type=text]```  ```#exchange-rate``` | Nhập tỷ giá quy đổi |
-
-|```button```| ```#convert``` | Nhấp để thực hiện quy đổi tiền (AJAX) |
-
-|```label``` | ```.result``` | Hiển thị kết quả quy đổi |
+| Loại   | ID(#)/Class(.) | Mô tả                          |
+|--------|----------------|--------------------------------|
+| input  | #amount        | Nhập giá trị cần quy đổi       |
+| input  | #exchange-rate | Nhập tỷ giá quy đổi            |
+| button | #convert       | Nhấp để thực hiện quy đổi tiền |
+| label  | .result        | Hiển thị kết quả quy đổi       |
 
   
 Page có sử dụng script ```converter.js``` (jQuery).
